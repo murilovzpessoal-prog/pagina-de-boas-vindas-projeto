@@ -64,7 +64,7 @@ export const ManagerRoulette: React.FC<ManagerRouletteProps> = ({
   protocolCode,
   candidateName,
   whatsappMessageTemplate,
-  membersAreaUrl,
+  membersAreaUrl: _membersAreaUrl,
   storedAllocation,
   onAllocationComplete,
 }) => {
@@ -457,10 +457,12 @@ export const ManagerRoulette: React.FC<ManagerRouletteProps> = ({
                 </a>
 
                 <a
-                  href={membersAreaUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3.5 text-[13.5px] font-medium text-white hover:bg-white/[0.09] hover:border-white/25 active:scale-[0.99] transition-all"
+                  href="https://www.projectalpine.com.br"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = 'https://www.projectalpine.com.br';
+                  }}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3.5 text-[13.5px] font-medium text-white hover:bg-white/[0.09] hover:border-white/25 active:scale-[0.99] transition-all cursor-pointer"
                 >
                   <span>Acessar Área de Membros Alpine</span>
                   <ArrowUpRight size={15} className="text-zinc-400" />

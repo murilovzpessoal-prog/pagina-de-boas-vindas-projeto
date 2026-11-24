@@ -241,10 +241,12 @@ export default function SelectedOnboardingApp() {
 
           <div className="flex items-center">
             <a
-              href={config.brand.membersAreaUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 py-2 text-[12px] font-medium text-white hover:bg-white/[0.09] hover:border-white/25 transition"
+              href="https://www.projectalpine.com.br"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = 'https://www.projectalpine.com.br';
+              }}
+              className="inline-flex items-center gap-1.5 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 py-2 text-[12px] font-medium text-white hover:bg-white/[0.09] hover:border-white/25 transition cursor-pointer"
             >
               <span>Área de Membros</span>
               <ArrowUpRight size={14} className="text-zinc-400" />
