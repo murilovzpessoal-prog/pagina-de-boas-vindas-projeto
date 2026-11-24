@@ -60,7 +60,7 @@ export const SELECTED_PAGE_CONFIG: SelectedPageConfig = {
     logoUrl: '/assets/login/alpine-logo.png',
     wordmarkUrl: '/assets/login/alpine-wordmark.png',
     backgroundUrl: '/assets/login/alpine-bg.jpg',
-    membersAreaUrl: '/curso',
+    membersAreaUrl: 'https://www.projectalpine.com.br',
   },
 
   vsl: {
